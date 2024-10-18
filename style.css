@@ -4,6 +4,12 @@
     box-sizing: border-box;
     background-color: #f5e6cc;
     font-family: sans-serif;
+    color: #2e4a47;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
 }
 
 nav{
@@ -16,6 +22,8 @@ nav{
 
 .logo{
     cursor: pointer;
+    font-size: 2.5em;
+    color: #112A46;
 }
 
 .search{
@@ -45,11 +53,13 @@ button{
     width: 20%;
     height: 100%;
     flex: 0.2;
-    background-color: black;
+    background-color: #333333;
     border: none;
     color: white;
     border-radius: 60px;
     text-align: center;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 
@@ -61,4 +71,112 @@ button{
 .user li{
     display: inline-block;
     padding: 0px 20px;
+    cursor: pointer;
+}
+
+.main-image{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-image img{
+    width: 100%;
+    height: 40%;
+    display: block;
+    border-radius: 10px;
+}
+
+.description{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.description h1{
+    margin: 10px;
+}
+
+.recipe-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+
+}
+
+.recipe-card{
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card:hover{
+    transform: translateY(-10px);
+}
+
+.recipe-card img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.recipe-info{
+    padding: 15px;
+}
+
+.recipe-info h3{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.recipe-info p{
+    font-size: 1em;
+    color: #555;
+    margin: 0;
+}
+
+.recipe-card a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.box{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.recipe-title{
+    text-align: center;
+    color: #ff6f61;
+    margin-bottom: 20px;
+}
+
+.recipe-image{
+    text-align: center;
+}
+
+.ingredient-list, 
+.cooking-steps{
+    margin-left: 20px;
+    color: #555;
+}
+
+.ingredient-list li, 
+.cooking-steps li{
+    margin-bottom: 10px;
 }
